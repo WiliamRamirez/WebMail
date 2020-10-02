@@ -1116,7 +1116,7 @@ $addrbook_global_listing = false;
  * symbol and country code
  * @global string $squirrelmail_default_language
  */
-$squirrelmail_default_language = 'en_US';
+$squirrelmail_default_language = 'es_ES';
 
 /**
  * Default Charset
