@@ -52,6 +52,8 @@ sqsession_destroy();
  * in some rare instances, the session seems to stick
  * around even after destroying it (!!), so if it does,
  * we'll manually flatten the $_SESSION data
+ afafafaf
+ asfafa
  */
 if (!empty($_SESSION)) {
     $_SESSION = array();

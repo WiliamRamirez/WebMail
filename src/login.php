@@ -41,28 +41,22 @@
               <form action="redirect.php" method="POST">
 
                 <div class="form-group mb-3">
-                  <label for="login_username">User</label>
-                  <input type="text" class="form-control" name="login_username" id="login_username" value="" placeholder="Enter your user">
+                  <label for="login_username">Usuario</label>
+                  <input type="text" class="form-control" name="login_username" id="login_username" value="" placeholder="Ingrese el usuario">
                   
                 </div>
 
                 <div class="form-group mb-3">
                   <label for="password">Password</label>
 
-                  <input type="password" name="secretkey" class="form-control" id="password" placeholder="Enter your password">
+                  <input type="password" name="secretkey" class="form-control" id="password" placeholder="Ingrese password">
                   <input type="hidden" name="js_autodetect_results" id="js_autodetect_results" value="1">
                   <input type="hidden" name="just_logged_in" id="just_logged_in" value="1">
 
                   
                 </div>
 
-                <div class="form-group mb-3">
-                  <div class="custom-control custom-checkbox checkbox-info">
-                    <input type="checkbox" class="custom-control-input" id="checkbox-signin">
-                    <label class="custom-control-label" for="checkbox-signin">Remember me</label>
-                  </div>
-                </div>
-
+                
                 <div class="form-group mb-0 text-center">
                   <input type="submit" class="btn btn-danger btn-block"v name="smsubmit" id="smsubmit" value="Log In">
                   
@@ -116,24 +110,7 @@
   <!-- App js -->
   <script src="../../assets/js/app.min.js"></script>
 
-  <script language="JavaScript" type="text/javascript">
-    var alreadyFocused = false;
 
-    function squirrelmail_loginpage_onload() {
-      document.login_form.js_autodetect_results.value = '1';
-      if (alreadyFocused) return;
-      var textElements = 0;
-      for (i = 0; i < document.login_form.elements.length; i++) {
-        if (document.login_form.elements[i].type == "text" || document.login_form.elements[i].type == "password") {
-          textElements++;
-          if (textElements == 1) {
-            document.login_form.elements[i].focus();
-            break;
-          }
-        }
-      }
-    }
-  </script>
 
 </body>
 
