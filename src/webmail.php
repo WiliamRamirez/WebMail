@@ -110,7 +110,9 @@ $output = ($browser_rendering_mode === 'standards' || $browser_rendering_mode ==
 	    <link href="../../assets/css/app.min.css" rel="stylesheet" type="text/css" />
 	    '
           . "<meta name=\"robots\" content=\"noindex,nofollow\">\n"
-          . "<title>$org_title</title>\n"
+          . "<link rel=\"shortcut icon\" href=\"../../assets/images/logo-unsch-alone.ico\">\n"
+          . "<title>Municipalidad Provincial Vilcas Huaman</title>\n"
+
           . "</head>";
 
 $left_size = getPref($data_dir, $username, 'left_size');
